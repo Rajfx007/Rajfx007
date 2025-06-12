@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beauty Trading Dashboard</title>
+
+  <!-- Embedded CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #0d1117;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #61dafb;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #links ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #links li {
+      margin: 10px 0;
+    }
+
+    #links a {
+      color: #0070f3;
+      text-decoration: none;
+    }
+
+    #blog article {
+      background: #ffffff;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e9ecef;
+    }
+
+    .tradingview-widget-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📊 Beauty's Live Trading Dashboard</h1>
+    <nav>
+      <a href="#market">Live Market</a>
+      <a href="#links">Resources</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Live Market Widget -->
+    <section id="market">
+      <h2>Live Market Overview</h2>
+      <div class="tradingview-widget-container">
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            {"proName": "NASDAQ:AAPL", "title": "Apple"},
+            {"proName": "NASDAQ:TSLA", "title": "Tesla"},
+            {"proName": "BINANCE:BTCUSDT", "title": "Bitcoin"},
+            {"proName": "BINANCE:ETHUSDT", "title": "Ethereum"},
+            {"proName": "FX:EURUSD", "title": "EUR/USD"}
+          ],
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+        </script>
+      </div>
+    </section>
+
+    <!-- Reference Links -->
+    <section id="links">
+      <h2>🔗 Useful Resources</h2>
+      <ul>
+        <li><a href="https://www.tradingview.com/" target="_blank">TradingView (Charts)</a></li>
+        <li><a href="https://www.investing.com/" target="_blank">Investing.com (News & Calendar)</a></li>
+        <li><a href="https://www.babypips.com/" target="_blank">BabyPips (Learn Forex)</a></li>
+        <li><a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap (Crypto Prices)</a></li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>📝 Latest Trading Insights</h2>
+      <article>
+        <h3>How to Use RSI for Crypto Trading</h3>
+        <p>The Relative Strength Index (RSI) is a momentum oscillator that measures the speed and change of price movements...</p>
+        <a href="#">Read more</a>
+      </article>
+
+      <article>
+        <h3>Top 5 Mistakes Beginner Traders Make</h3>
+        <p>Many traders fail early by overleveraging, ignoring risk management, or following hype instead of analysis...</p>
+        <a href="#">Read more</a>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Beauty's Trading Hub | Stay Smart, Trade Safe</p>
+  </footer>
+
+</body>
+</html>
